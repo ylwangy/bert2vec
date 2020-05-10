@@ -28,14 +28,11 @@ class SkipGramModel(nn.Module):
 
     def forward(self, pos_u, pos_v, neg_v, u_bert):
 
-        # emb_u = self.u_embeddings(pos_u)
-        emb_v = self.v_embeddings(pos_v) #50*100
-        emb_ubert = self.W(torch.cat(u_bert).cuda())#50*768
-        # emb_ubert = torch.cat(u_bert).cuda()
-        # score = torch.mul(emb_u, emb_v).squeeze()
+        emb_v = self.v_embeddings(pos_v) 
+        emb_ubert = self.W(torch.cat(u_bert).cuda())
         score = torch.mul(emb_ubert, emb_v).squeeze()
         score = torch.sum(score, dim=1)
-        att = self.qk_net(emb_ubert, emb_v) #1*50
+        att = self.qk_net(emb_ubert, emb_v) 
         score = torch.mul(score,att)#
         score = F.logsigmoid(score)
 
@@ -48,19 +45,9 @@ class SkipGramModel(nn.Module):
 
     def save_embedding(self, id2word, file_name):
 
-        # embedding = self.u_embeddings.weight.cpu().data.numpy()
-        #
-        # fout = open(file_name, 'w')
-        # # fout.write('%d %d\n' % (len(id2word), self.emb_dimension))
-        # for wid, w in id2word.items():
-        #     e = embedding[wid]
-        #     e = ' '.join(map(lambda x: str(x), e))
-        #     fout.write('%s %s\n' % (w, e))
-        #
 
         embedding2 = self.v_embeddings.weight.cpu().data.numpy()
         fout = open(file_name + '_v', 'w')
-        # fout.write('%d %d\n' % (len(id2word), self.emb_dimension))
         for wid, w in id2word.items():
             e = embedding2[wid]
             e = ' '.join(map(lambda x: str(x), e))
