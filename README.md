@@ -1,9 +1,9 @@
 # bert2vec
 
-This is a repo for training static woed embeddings by combing BERT.
+This is a repo for training static word embeddings by combing BERT.
 
 
-1.prepare your corpus as 'data.txt_plain', each sentences per line.
+1.prepare your corpus as 'data.txt_plain', one sentence per line.
 
 anarchism anarchism is a political philosophy that advocates self-governed societies based on voluntary institutions .
 
@@ -17,7 +17,7 @@ these are often described as stateless societies , although several authors have
 python word2vec.py
 
 
-You can get the final embeddings through link below:
+You can get the final word embeddings through link below:
 
 
 https://drive.google.com/file/d/1WIfJ7XgbPoRHBDfYdx-BhzhCPaxmNRxJ/view?usp=sharing
