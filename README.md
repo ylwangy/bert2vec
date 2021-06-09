@@ -17,7 +17,8 @@ these are often described as stateless societies , although several authors have
 python word2vec.py
 
 
-You can get the final 300-dim word embeddings (.txt) through link below:
+You can get the final 300-dim word embeddings through links below (Baidu or Google Storage):
 
+https://pan.baidu.com/s/11hV_SFO36XabzFf2SE4GLw  (code: vham) 
 
 https://drive.google.com/file/d/1WIfJ7XgbPoRHBDfYdx-BhzhCPaxmNRxJ/view?usp=sharing
