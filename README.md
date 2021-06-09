@@ -1,6 +1,8 @@
 # bert2vec
 
-This is a repo for training static word embeddings by combing BERT. See our journal paper for detail: Improving Skip-Gram Embeddings Using BERT (TASLP 2021)
+This is a repo for training static word embeddings by combing BERT. 
+
+See our journal paper for detail: Improving Skip-Gram Embeddings Using BERT (TASLP 2021)
 
 
 1.Preparing your corpus (wiki) as 'data.txt_plain', one sentence per line.
