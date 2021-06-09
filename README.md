@@ -3,7 +3,7 @@
 This is a repo for training static word embeddings by combing BERT.
 
 
-1.preparing your corpus as 'data.txt_plain', one sentence per line.
+1.Preparing your corpus (wiki) as 'data.txt_plain', one sentence per line.
 
 anarchism anarchism is a political philosophy that advocates self-governed societies based on voluntary institutions .
 
@@ -12,7 +12,7 @@ these are often described as stateless societies , although several authors have
 ...
 
 
-2.training your word embeddings:
+2.Training your word embeddings:
 
 python word2vec.py
 
