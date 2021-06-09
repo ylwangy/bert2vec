@@ -15,3 +15,9 @@ these are often described as stateless societies , although several authors have
 2.train your word embeddings:
 
 python word2vec.py
+
+
+You can get the final embeddings through link below:
+
+
+https://drive.google.com/file/d/1WIfJ7XgbPoRHBDfYdx-BhzhCPaxmNRxJ/view?usp=sharing
